@@ -142,8 +142,14 @@
       List, find, and distribute surplus food across campus. Save meals, reduce environmental impact, and foster a connected community.
     </p>
     <div class="hero-buttons">
-      <button class="hero-btn find">Find Food Near You</button>
-      <a href="admin-login.html" class="hero-btn donate">Donate Surplus Food</a>
+      <button class="hero-btn find">
+        <i class="fas fa-search"></i>
+        Find Food Near You
+      </button>
+      <a href="admin-login.html" class="hero-btn donate">
+        <i class="fas fa-heart"></i>
+        Donate Surplus Food
+      </a>
     </div>
   </div>
 
@@ -223,15 +229,18 @@
             <h2 class="food-title">${item.title}</h2>
             <p class="food-desc">${item.description}</p>
             <ul class="food-meta">
-              <li><strong>Donated by:</strong> ${item.donor}</li>
-              <li><strong>Location:</strong> ${item.location}</li>
-              <li><strong>Pickup:</strong> ${item.pickup}</li>
-              <li><strong>Expires:</strong> ${item.expiry}</li>
-              <li><strong>Quantity Available:</strong> ${item.servings}</li>
+              <li><i class="fas fa-user-circle"></i> <strong>Donated by:</strong> ${item.donor}</li>
+              <li><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> ${item.location}</li>
+              <li><i class="fas fa-clock"></i> <strong>Pickup:</strong> ${item.pickup}</li>
+              <li><i class="fas fa-calendar-times"></i> <strong>Expires:</strong> ${item.expiry}</li>
+              <li><i class="fas fa-utensils"></i> <strong>Quantity Available:</strong> ${item.servings}</li>
             </ul>
           </div>
           <div class="food-card-footer">
-            <button class="reserve-btn">Reserve This Food</button>
+            <button class="reserve-btn">
+              <i class="fas fa-hand-holding-heart"></i>
+              Reserve This Food
+            </button>
           </div>
         `;
         foodList.appendChild(card);
